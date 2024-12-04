@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "io.github.maloryware.magmaphile.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "LavaWorldGenHeight"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

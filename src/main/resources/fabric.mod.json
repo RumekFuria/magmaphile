@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magmaphile",
+	"version": "${version}",
+	"name": "Magmaphile",
+	"description": "Lowers lava flood height generation to -117. Useful for datapacks/mods that extend world height and floor.",
+	"authors": [
+		"maloryware"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/magmaphile/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.maloryware.magmaphile.Magmaphile"
+		],
+		"client": [
+			"io.github.maloryware.magmaphile.MagmaphileClient"
+		],
+		"fabric-datagen": [
+			"io.github.maloryware.magmaphile.MagmaphileDataGenerator"
+		]
+	},
+	"mixins": [
+		"magmaphile.mixins.json",
+		{
+			"config": "magmaphile.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"expanded-world": "*"
+	}
+}
