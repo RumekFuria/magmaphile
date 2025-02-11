@@ -1,0 +1,5 @@
+{
+  "magmaphile.midnightconfig.title": "Magmaphile",
+  "magmaphile.midnightconfig.lavaHeightGen": "Underground Lava Height Generation",
+  "magmaphile.midnightconfig.lavaHeightGen.tooltip": "Height at which lava pools generate underground."
+}
