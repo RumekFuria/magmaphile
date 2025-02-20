@@ -1,5 +1,11 @@
 {
   "magmaphile.midnightconfig.title": "Magmaphile",
-  "magmaphile.midnightconfig.lavaHeightGen": "Underground Lava Height Generation",
-  "magmaphile.midnightconfig.lavaHeightGen.tooltip": "Height at which lava pools generate underground."
+  "magmaphile.midnightconfig.override_lava_gen": "Override Vanilla Lava Generation §l(*)",
+  "magmaphile.midnightconfig.override_lava_gen.label.tooltip": "Toggles this mod's functionality.\nOff for vanilla, On for custom parameters.",
+  "magmaphile.midnightconfig.toggle_lower_bound": "Override Lower Limit §l(§4§l*§r§l)",
+  "magmaphile.midnightconfig.toggle_lower_bound.label.tooltip": "Allows configuring a lower limit for lava pool generation.\n\n§l(§4§l*§r§l) §4§lThis feature is experimental.",
+  "magmaphile.midnightconfig.lava_max_height_gen": "Underground Lava Height Generation (Start) §l(*)",
+  "magmaphile.midnightconfig.lava_max_height_gen.label.tooltip": "Higher boundary for the height at which lava pools generate underground.\n\nThis value should be §lhigher§r than §lUnderground Lava Height Generation (End)",
+  "magmaphile.midnightconfig.lava_min_height_gen": "Underground Lava Height Generation (End) §l(§4§l*§r§l)",
+  "magmaphile.midnightconfig.lava_min_height_gen.label.tooltip": "Lower boundary for the height at which lava pools generate underground.\n\nThis value should be §llower§r than §lUnderground Lava Height Generation (Start)\n\n§l(§4§l*§r§l) §4§lThis feature is experimental."
 }

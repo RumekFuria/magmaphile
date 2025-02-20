@@ -4,6 +4,7 @@
 	"version": "${version}",
 	"name": "Magmaphile",
 	"description": "Lowers lava flood height generation to -117. Useful for datapacks/mods that extend world height and floor.",
+
 	"authors": [
 		"maloryware"
 	],
