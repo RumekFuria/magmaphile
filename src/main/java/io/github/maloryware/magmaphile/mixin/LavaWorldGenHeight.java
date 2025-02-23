@@ -35,14 +35,17 @@ public class LavaWorldGenHeight {
 	@SuppressWarnings("LocalMayBeArgsOnly")
     @ModifyReturnValue(method = "method_45509", at = @At("RETURN"))
 	private static AquiferSampler.FluidLevel lavaGenLowerBound(AquiferSampler.FluidLevel original,
+															   @Local(ordinal = 0) int test,
+															   @Local(ordinal = 1) int x,
 															   @Local(ordinal = 2) int y,
+															   @Local(ordinal = 3) int z,
 															   @Local(ordinal = 0) AquiferSampler.FluidLevel fluidLevel,
 															   @Local(ordinal = 1) AquiferSampler.FluidLevel fluidLevel2){
 
 		if (!Config.override_lava_gen) { return original; }
 		boolean check = Config.toggle_lower_bound
-				? y < Config.lava_max_height_gen
-				: y < Config.lava_max_height_gen && y > Config.lava_min_height_gen;
+				? y < Config.lava_max_height_gen && y >= Config.lava_min_height_gen
+				: y < Config.lava_max_height_gen;
 
         return check ? fluidLevel : fluidLevel2;
 
