@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Debug(export = true)
-@Mixin(NoiseChunkGenerator.class)
+@Mixin(NoiseChunkGenerator.class, priority = 1200) //fire mixin after C2ME (let's see if it still explodes, works, or explodes but to the left)
 public class LavaWorldGenHeight {
 
 
